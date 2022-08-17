@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container py-5">
+        <label for="myName" class="mb-2">name</label>
+        <input type="text" id="myName" class="form-control mb-4">
+        <div class="invalid-feedback my-2" id="validNameAlert">
+            please enter valid name
+        </div>
+
+        <label for="myPrice" class="mb-2">price</label>
+        <input type="text" id="myPrice" class="form-control mb-4">
+        <div class="invalid-feedback my-2" id="validPriceAlert">
+            please enter valid price
+        </div>
+
+        <label for="myCategory" class="mb-2">category</label>
+        <input type="text" id="myCategory" class="form-control mb-4">
+
+        <label for="myDescription" class="mb-2">description</label>
+        <input type="text" id="myDescription" class="form-control mb-4">
+
+        <button class="btn btn-outline-primary p-3" id="myButton" onclick="grandButton()">add product</button>
+
+        <input type="search" class="form-control mt-4 w-75 mx-auto border-3" placeholder="search"
+            onkeyup="search(this.value)" id="searchInput">
+
+        <table class="table text-center border my-5 table-striped">
+            <thead>
+                <th>name</th>
+                <th>price</th>
+                <th>category</th>
+                <th>description</th>
+                <th>update</th>
+                <th>remove</th>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./custom.js"></script>
+</body>
+
+</html>
